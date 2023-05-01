@@ -52,24 +52,78 @@
     width: 100px;
     height: 100px;
 }
-.ex-5-square:link{
+.ex-5-square:active{
     width: 20px;
     height: 20px;
 }
+/* esercizio 5 completato*/
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+/* esercizio 6 completato*/
+.ex-7-img{
+    transition-duration: 5s;
+}
+.ex-7-img:hover{
+    filter: grayscale(100%);
+}
+/* esercizio 7 completato*/
+.ex-8-img{
+    transition-duration: 5s;
+}
+.ex-8-img:hover{
+    filter: grayscale(100%);
+    border-radius: 10%;
+}
+/* esercizio 8 completato*/
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+.ex-9-img{
+    transition-duration: 5s;
+}
+.ex-9-img:hover{
+    filter: grayscale(100%);
+    border-radius: 10%;
+    width: 200px;
+}
+/* esercizio 9 completato*/
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10-icon:hover{
+    animation: ruota10 5s;
+}
+@keyframes ruota10{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* esercizio 10 completato*/
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover{
+    animation: ruota11 5s;
+}
+@keyframes ruota11{
+    0%{
+        transform: rotate(0deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+/* esercizio 11 completato*/
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -99,5 +153,99 @@
     width: 60px;
     height: 20px;
 }
-
-
+.ex-12-button:hover .ex-12-top-white{
+    animation: sopra12 10s;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: sotto12 10s;
+}
+@keyframes sopra12{
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    50%{
+        top: -10px;
+        left: 90%;
+    }
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+@keyframes sotto12{
+    
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+    50%{
+        bottom: -10px;
+        right: 80%;
+    }
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
+/* esercizio 12 completato*/
+.ex-13-button:hover .ex-13-top-white{
+    animation: sopra13 10s;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: sotto13 10s;
+}
+@keyframes sopra13{
+    0%{
+        top: -10px;
+        left: 10%;
+    }
+    20%{
+        top: -10px;
+        left: 85%;
+    }
+    40%{
+        top: 85%;
+        left: 85%;
+    }
+    60%{
+        top: 85%;
+        left: -15%;
+    }
+    80%{
+        top: -10px;
+        left: -15%;
+    }
+    100%{
+        top: -10px;
+        left: 10%;
+    }
+}
+@keyframes sotto13{
+    
+    0%{
+        bottom: -10px;
+        right: 20%;
+    }
+    20%{
+        bottom: -10px;
+        right: 85%;
+    }
+    40%{
+        bottom: 85%;
+        right: 85%;
+    }
+    60%{
+        bottom: 85%;
+        right: -15%;
+    }
+    80%{
+        bottom: -10px;
+        right: -15%;
+    }
+    100%{
+        bottom: -10px;
+        right: 20%;
+    }
+}
+/* esercizio 13 completato*/
